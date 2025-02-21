@@ -1,8 +1,0 @@
-﻿{
-    "name": "com.matsufriends.mornenum",
-    "displayName": "Morn Enum",
-    "version": "1.0.0",
-    "unity": "2021.3",
-    "description": "enum Extension for Unity.",
-    "license": "Unlicense"
-}
