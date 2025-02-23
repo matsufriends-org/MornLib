@@ -14,7 +14,7 @@ namespace MornSingleton
             {
                 if (s_instance != null) return s_instance;
 
-                s_instance = FindObjectOfType<T>();
+                s_instance = FindFirstObjectByType<T>();
                 if (s_instance == null) Debug.LogError($"{typeof(T)}が見つかりません");
 
                 s_instance.OnInstanced();
@@ -54,7 +54,7 @@ namespace MornSingleton
             {
                 if (s_instance != null) return s_instance;
 
-                var mono = FindObjectOfType<TMono>();
+                var mono = FindFirstObjectByType<TMono>();
                 s_instance = mono;
                 if (s_instance == null) throw new Exception($"{typeof(TMono)}が見つかりません");
 
