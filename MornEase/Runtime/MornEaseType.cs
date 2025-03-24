@@ -31,6 +31,7 @@
         EaseInOutElastic,
         EaseInBounce,
         EaseOutBounce,
-        EaseInOutBounce
+        EaseInOutBounce,
+        Linear,
     }
 }

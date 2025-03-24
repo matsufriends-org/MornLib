@@ -94,6 +94,8 @@ namespace MornEase
                     return x < 0.5
                         ? (1 - Ease(1 - 2 * x, MornEaseType.EaseOutBounce)) / 2
                         : (1 + Ease(2 * x - 1, MornEaseType.EaseOutBounce)) / 2;
+                case MornEaseType.Linear:
+                    return x;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(easeType), easeType, null);
             }
