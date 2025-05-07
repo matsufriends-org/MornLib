@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
-using MornLib.Cores;
-using MornLib.Extensions;
+using MornUtil;
 using UnityEngine;
 
 namespace MornLib.Mono.TcgLayout
@@ -139,7 +138,7 @@ namespace MornLib.Mono.TcgLayout
 
         public void RemoveItem(IMornTcgRectController mornTcgRect)
         {
-            if (mornTcgRect.Index < 0 || _rectList.Count <= mornTcgRect.Index) MornLog.Error("不正なIndexです");
+            if (mornTcgRect.Index < 0 || _rectList.Count <= mornTcgRect.Index) Debug.LogError("不正なIndexです");
 
             _rectList.RemoveAt(mornTcgRect.Index);
             foreach (var rect in _rectList) rect.RemoveIndex(mornTcgRect.Index);

@@ -1,5 +1,4 @@
 ﻿using System;
-using MornLib.Cores;
 using MornSingleton;
 using UnityEngine;
 
@@ -24,7 +23,7 @@ namespace MornLib.PopUps
         {
             if (_initialized == false)
             {
-                MornLog.Warning("PopUpはまだセットアップされていません");
+                Debug.LogWarning("PopUpはまだセットアップされていません");
                 return;
             }
 
@@ -38,7 +37,7 @@ namespace MornLib.PopUps
         {
             if (_initialized == false)
             {
-                MornLog.Warning("PopUpはまだセットアップされていません");
+                Debug.LogWarning("PopUpはまだセットアップされていません");
                 return;
             }
 

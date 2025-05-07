@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MornLib.Cores;
+using UnityEngine;
 
 namespace MornLib.Pools
 {
@@ -19,7 +20,7 @@ namespace MornLib.Pools
         public static void Return(T item)
         {
             if (s_rentingInstanceHashSet.Remove(item) == false)
-                MornLog.Warning("Pool管理外のInstanceが渡された");
+                Debug.LogWarning("Pool管理外のInstanceが渡された");
             else
                 s_itemQueue.Enqueue(item);
         }
