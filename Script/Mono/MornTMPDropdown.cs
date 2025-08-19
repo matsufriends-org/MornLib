@@ -1,6 +1,7 @@
-﻿#if USE_TEXTMESHPRO
+﻿
+using MornUtil;
+#if USE_TEXTMESHPRO
 using TMPro;
-using MornLib.Extensions;
 using UnityEngine.EventSystems;
 #endif
 #if UNITY_EDITOR && USE_TEXTMESHPRO
